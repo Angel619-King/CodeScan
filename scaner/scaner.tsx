@@ -27,7 +27,6 @@ export default function Scaner() {
       const config: ScanbotBarcodeSdkConfiguration = {
         licenseKey: licenseKey,
         loggingEnabled: true,
-        // Configuraciones adicionales si las necesitas
       };
 
       const licenseInfo: LicenseInfoResult = await ScanbotBarcodeSDK.initializeSdk(config);
@@ -55,8 +54,7 @@ export default function Scaner() {
   };
 
   const scannerConfig: BarcodeScannerConfiguration = {
-    // cameraPreviewMode no existe en la configuración actual
-    // Usa la propiedad 'camera' en su lugar
+
     camera: {
       previewMode: "FILL_IN",
       zoomEnabled: true,
